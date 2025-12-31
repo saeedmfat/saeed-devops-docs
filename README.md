@@ -45,7 +45,6 @@ This is a personal documentation hub. For suggestions or corrections, please ope
 ## 📊 Statistics
 - **Total Documents**: 20+
 - **Categories**: 6
-- **Last Updated**: $(date +%Y-%m-%d)
 
 ---
 *"Documentation is a love letter to your future self."*
