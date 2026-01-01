@@ -38,9 +38,7 @@ Browse the documentation by category above. Each document contains practical, re
 
 This is a personal documentation hub. For suggestions or corrections, please open an issue.
 
-## 🔗 Related Projects
 
-- [MBTI Dockerized Application](https://github.com/saeedmfat/dockerize-mbti-app) - Separate application project
 
 ## 📊 Statistics
 - **Total Documents**: 20+
