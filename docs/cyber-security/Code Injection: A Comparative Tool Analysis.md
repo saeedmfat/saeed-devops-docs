@@ -84,3 +84,131 @@ Detection engineering counter-strategy frameworks emerge from understanding how 
 
 A narrative architectural tradeoff matrix can classify the analyzed tools into paradigm families based on their dominant execution strategies. Runtime overlay injectors form one family characterized by environmental dependence and transient structural integration. Binary coupling tools form another family where execution is embedded within modified artifacts that persist across system states. Transformation enablers represent a supporting family that increases portability and composability across execution contexts. Modular payload frameworks occupy a cross-paradigm category capable of supporting multiple architectural approaches depending on configuration. This classification highlights that tool names are less important than architectural roles within the broader injection ecosystem.
 
+```mermaid
+graph TB
+    subgraph "Code Injection Ecosystem - Comparative Analysis"
+        
+        subgraph "Core Tools"
+            A[Cymothoa]
+            B[mem_inject]
+            C[Shellter]
+            D[pe_to_shellcode]
+            E[msfvenom]
+        end
+
+        subgraph "Injection Paradigms"
+            F[Runtime Memory Injection]
+            G[Binary Modification]
+            H[Payload Transformation]
+            I[Modular Payload Framework]
+        end
+
+        subgraph "Conceptual Dimensions"
+            J[Conceptual Adoption Difficulty<br/>Beginner ← → Expert]
+            K[Execution Context<br/>Transient ← → Persistent]
+            L[Stealth Perception<br/>Process-level ← → Artifact-level]
+            M[Detection Exposure<br/>Behavioral ← → Structural]
+        end
+
+        subgraph "Operational Characteristics"
+            N[Telemetry Footprint<br/>Runtime Signals]
+            O[Artifact Persistence<br/>Memory vs Disk]
+            P[Loader Behavior<br/>Direct vs Transformative]
+            Q[Forensic Residue<br/>Volatile vs Permanent]
+        end
+
+        subgraph "Architectural Tradeoffs"
+            R[Executable Structure<br/>Overlay vs Coupling]
+            S[Memory Allocation<br/>Blended vs Anomalous]
+            T[Thread Orchestration<br/>Integrated vs Divergent]
+            U[System Interface<br/>Minimal vs Extensive]
+        end
+
+        subgraph "Detection Implications"
+            V[Behavioral Analytics<br/>Process Relationships]
+            W[File Integrity<br/>Binary Anomalies]
+            X[Memory Analysis<br/>Region Properties]
+            Y[Telemetry Correlation<br/>Cross-signal Detection]
+        end
+
+        subgraph "Attacker Mental Model"
+            Z[Cognitive Economy<br/>Familiarity & Confidence]
+            AA[Risk Balancing<br/>Stealth vs Reliability]
+            AB[Uncertainty Management<br/>Probabilistic Success]
+        end
+
+        subgraph "Defender Mental Model"
+            AC[Visibility Abstraction<br/>Artifact Focus]
+            AD[Anomaly Correlation<br/>Pattern Recognition]
+            AE[Cost Efficiency<br/>Scale vs Precision]
+        end
+
+        A --> F
+        B --> F
+        C --> G
+        D --> H
+        E --> I
+        
+        F --> J
+        F --> K
+        F --> L
+        F --> M
+        
+        G --> J
+        G --> K
+        G --> L
+        G --> M
+        
+        H --> I
+        
+        F --> N
+        F --> O
+        F --> P
+        F --> Q
+        
+        G --> N
+        G --> O
+        G --> P
+        G --> Q
+        
+        N --> R
+        O --> S
+        P --> T
+        Q --> U
+        
+        R --> V
+        S --> W
+        T --> X
+        U --> Y
+        
+        V --> AD
+        W --> AC
+        X --> AD
+        Y --> AE
+        
+        Z --> AA
+        AA --> AB
+        
+        AC --> AD
+        AD --> AE
+        
+    end
+
+    classDef tool fill:#e1f5fe,stroke:#01579b,color:#000
+    classDef paradigm fill:#fff3e0,stroke:#e65100,color:#000
+    classDef dimension fill:#e8f5e8,stroke:#1b5e20,color:#000
+    classDef operational fill:#f3e5f5,stroke:#4a148c,color:#000
+    classDef architectural fill:#ffebee,stroke:#b71c1c,color:#000
+    classDef detection fill:#e0f2f1,stroke:#004d40,color:#000
+    classDef attacker fill:#ffccbc,stroke:#bf360c,color:#000
+    classDef defender fill:#d1c4e9,stroke:#311b92,color:#000
+    
+    class A,B,C,D,E tool
+    class F,G,H,I paradigm
+    class J,K,L,M dimension
+    class N,O,P,Q operational
+    class R,S,T,U architectural
+    class V,W,X,Y detection
+    class Z,AA,AB attacker
+    class AC,AD,AE defender
+```
